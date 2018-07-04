@@ -148,13 +148,7 @@ let welcomer = member.guild.channels.find("name","chat");
      welcomer.send({embed:norelden});  
 
 
-client.on("guildMemberAdd", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(`「.🔱 Welcome TO Z 🔱.」شيڪ عڵي قوٱنين ٱڵڪڵٱن #rules 
-:crown:اسم العضو  ${member}:crown:  
-انت العضو رقم ${member.guild.memberCount} `) 
-}).catch(console.error)
-})
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
